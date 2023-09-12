@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .box-shadow {
+  /* box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05), 0 4px 10px 0 rgba(0, 0, 0, 0.01); */
+/* } */
+
+.transaction-btn {
+  background-color: #07425b;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.popup-container {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+.popup-form {
+  background-color: #ffffff;
+  /* width: 300px; */
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #07425b;
+}
+
+.popup-form input[type="text"],
+.popup-form input[type="number"],
+.popup-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Garamond, serif;
+}
+
+.popup-form input[type="submit"] {
+  background-color: #07425b;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup-form input[type="submit"]:hover {
+  background-color: #032a3f;
+}
+
+.popup-form .transaction-options {
+  display: none;
+}
+
+.popup-form .transaction-options.lending {
+  display: block;
+}
+
+.popup-form .transaction-options.borrowing {
+  display: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 20px;
+  color: #999;
+  cursor: pointer;
+}
+
+.error-message {
+  color: #ff0000;
+  margin-top: 10px;
+  display: none;
+}
+
+h1 {
+  color: #043a5f;
+}

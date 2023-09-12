@@ -1,0 +1,6 @@
+export {default as HeroSection} from './HeroSection'
+export {default as FeaturesSection} from './FeaturesSection'
+export {default as ServicesSection} from './ServicesSection'
+export {default as CategoriesSection} from './CategoriesSection'
+export {default as CommunitySection} from './CommunitySection'
+export {default as LoanCalculatorSection} from './LoanCalculatorSection'
